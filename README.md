@@ -5,7 +5,6 @@ def getMatrixMinor(arr, i, j):
     c = arr[:]
     c = np.delete(c, (i), axis=0)
     return np.array([np.delete(row, (j), axis=0) for row in c])
-
 def detCofactor(A):
     if A.ndim != 2:
         raise Exception("Input must be a matrix.")
